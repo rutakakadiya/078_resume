@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Ruta Kakadiya</title>
+    <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .name h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+header .name p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d3d3d3;
+}
+
+/* Resume Container Styles */
+.resume {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 700;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+/* Text and Lists */
+.section p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Project Cards */
+.project-card {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.project-card p {
+    font-size: 14px;
+}
+
+/* Education Cards */
+.education-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education-card p {
+    font-size: 16px;
+}
+
+/* Contact Info */
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+/* Section Styles */
+.section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Section Title */
+.section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Paragraph Styles */
+.section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: justify; /* For a clean, justified text alignment */
+}
+
+/* Highlight Important Text */
+.section p strong {
+    color: #000000;
+    font-weight: 800;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .section p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    header .name h1 {
+        font-size: 28px;
+    }
+
+    header .name p {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .resume {
+        padding: 15px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <div class="name">
+                <h1>Ruta Kakadiya</h1>
+                <p>Full Stack Developer</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="resume">
+        <div class="sections">
+            <div id="about-me" class="section">
+                <h2>About Me</h2>
+                <p>As a Full Stack Developer, I specialize in building comprehensive web applications that blend frontend and backend technologies to deliver seamless user experiences. My journey in software development has equipped me with a diverse skill set encompassing both client-side and server-side technologies.</p>
+                
+                <p>On the frontend, I excel in crafting intuitive and responsive user interfaces using HTML, CSS, and JavaScript frameworks such as React and Vue.js. I pay meticulous attention to design details and usability principles, ensuring that every interaction is intuitive and delightful.</p>
+                
+                <p>Turning to the backend, I am proficient in designing robust APIs and implementing server-side logic using technologies like Node.js, Express, and Django. I have experience in database management with SQL (e.g., MySQL, PostgreSQL) and NoSQL (e.g., MongoDB) databases, ensuring data integrity and scalability.</p>
+                
+                <p>My approach to development emphasizes scalability, security, and performance optimization. I leverage cloud platforms like AWS or Azure to deploy applications that can handle high traffic and maintain reliability under varying loads.</p>
+                
+                <p>Besides technical skills, I bring strong problem-solving abilities and a collaborative mindset to every project. I enjoy working closely with cross-functional teams, including designers and product managers, to align technical solutions with business goals and user needs.</p>
+                
+                
+            </div>
+            
+            <div id="skills" class="section">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React</li>
+                    <li><strong>Backend:</strong> Node.js, Express, PHP</li>
+                    <li><strong>Database:</strong> MySQL, MongoDB</li>
+                    <li><strong>Tools:</strong> Git, Docker, AWS</li>
+                </ul>
+            </div>
+            <div id="projects" class="section">
+                <h2>Projects</h2>
+                
+                <div class="project-card">
+                    <h3>Project Management Tool</h3>
+                    <p><strong>Role:</strong> Full Stack Developer</p>
+                    <p><strong>Description:</strong> Developed a comprehensive project management tool that allows teams to collaborate, track progress, and manage tasks effectively. Implemented features such as user authentication, task boards, real-time updates using WebSockets, and integration with third-party APIs for file storage.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>E-commerce Platform</h3>
+                    <p><strong>Role:</strong> Backend Developer</p>
+                    <p><strong>Description:</strong> Created a scalable backend for an e-commerce platform, handling user authentication, product listings, and order management. Implemented RESTful APIs for seamless communication between frontend and backend, integrated payment gateways for secure transactions, and optimized database queries for improved performance.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Social Media Dashboard</h3>
+                    <p><strong>Role:</strong> Full Stack Developer</p>
+                    <p><strong>Description:</strong> Developed a social media dashboard application for monitoring and analyzing social media trends. Integrated APIs from various social platforms for data aggregation, implemented data visualization using libraries like D3.js, and ensured responsive design for optimal user experience across devices.</p>
+                </div>
+            </div>
+            
+            <div id="education" class="section">
+                <h2>Education</h2>
+                <div class="education-card">
+                    <p><strong>2022-Pursuing:</strong> Bachelor of Computer Application, SDJ International College (VNSGU)</p>
+                    <p><strong>2022:</strong> HSC: Shree Vasishtha Vidhyalaya,vav</p>
+                </div>
+            </div>
+            <div id="contact" class="section">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <p><i class="bi bi-telephone-fill"></i> <a href="tel:+7359621258">+91 7359621258</a></p>
+                    <p><i class="bi bi-envelope-fill"></i> <a href="mailto:rutakakadiya12@gmail.com">rutakakadiya12@gmail.com</a></p>
+                    <p><i class="bi bi-geo-alt-fill"></i> F-903 Swastik Tower, Near Sanskrit Residency, Surat</p>
+                    <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/ruta-kakadiya" target="_blank">Ruta Kakadiya</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
